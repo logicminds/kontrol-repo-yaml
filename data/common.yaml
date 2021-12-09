@@ -15,3 +15,4 @@ puppet_enterprise::master::code_manager::sources:
    prefix: false
    ignore_branch_prefixes:
      - main
+     - production
