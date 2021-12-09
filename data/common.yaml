@@ -1,18 +1,51 @@
 ---
 message: "This node is using common data"
 puppet_enterprise::master::code_manager::sources:
- puppet:
-   remote: 'N/A'
-   type: exec
-   #type: yaml
-   #config: '/etc/puppetlabs/r10k/environments.yaml' 
-   command: '/etc/puppetlabs/r10k/r10k-environments.sh' 
+  puppet:
+    remote: 'N/A'
+    type: exec
+    #type: yaml
+    #config: '/etc/puppetlabs/r10k/environments.yaml' 
+    command: '/etc/puppetlabs/r10k/r10k-environments.sh' 
  
- git:
- # 1/1 environment/branch
-   remote: 'https://github.com/nwops/kontrol-repo-yaml.git'
-   type: git
-   prefix: false
-   ignore_branch_prefixes:
-     - main
-     - production
+  dev1:
+  # 1/1 environment/branch
+    remote: 'https://github.com/nwops/kontrol-repo-yaml.git'
+    type: git
+    prefix: true
+    ignore_branch_prefixes:
+      - main
+      - production
+  dev2:
+    # 1/1 environment/branch
+    remote: 'https://github.com/nwops/kontrol-repo-yaml-dev2.git'
+    type: git
+    prefix: true
+    ignore_branch_prefixes:
+      - main
+      - production
+  dev3:
+    # 1/1 environment/branch
+    remote: 'https://github.com/nwops/kontrol-repo-yaml-dev3.git'
+    type: git
+    prefix: true
+    ignore_branch_prefixes:
+      - main
+      - production
+  dev4:
+    # 1/1 environment/branch
+    remote: 'https://github.com/nwops/kontrol-repo-yaml-dev4.git'
+    type: git
+    prefix: true
+    ignore_branch_prefixes:
+      - main
+      - production  
+  dev5:
+    # 1/1 environment/branch
+    remote: 'https://github.com/nwops/kontrol-repo-yaml-dev5.git'
+    type: git
+    prefix: true
+    ignore_branch_prefixes:
+      - main
+      - production      
+        
