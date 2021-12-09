@@ -29,3 +29,6 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+node /pe-*.puppet.vm/ {
+  include role::puppetserver
+}
