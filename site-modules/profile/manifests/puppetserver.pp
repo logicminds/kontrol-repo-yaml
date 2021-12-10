@@ -6,4 +6,5 @@ class profile::puppetserver {
     group  => 'root',
     source => 'puppet:///modules/profile/r10k-environments.sh'
   }
+  package{'git': ensure => present}
 }
