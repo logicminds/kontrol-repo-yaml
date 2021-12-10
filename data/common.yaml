@@ -15,6 +15,12 @@ puppet_enterprise::master::code_manager::sources:
     prefix: true
     ignore_branch_prefixes:
       - main
+      - acceptance
+      - development
+      - feat_yamlr10k
+      - hotfix
+      - production
+      - qa
   dev2:
     # 1/1 environment/branch
     remote: 'https://github.com/nwops/kontrol-repo-yaml-dev2.git'
