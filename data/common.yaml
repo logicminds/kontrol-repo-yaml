@@ -6,7 +6,7 @@ puppet_enterprise::master::code_manager::sources:
     type: exec
     #type: yaml
     #config: '/etc/puppetlabs/r10k/environments.yaml' 
-    command: '/etc/puppetlabs/r10k/r10k-environments.sh' 
+    command: '/etc/puppetlabs/r10k/r10k-environments-git.sh' 
  
   dev1:
   # 1/1 environment/branch
