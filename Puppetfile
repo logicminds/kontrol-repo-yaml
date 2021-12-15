@@ -70,9 +70,7 @@ mod 'crossbelt',
 mod 'peadm',
   git: 'https://github.com/puppetlabs/puppetlabs-peadm.git',
   ref: 'main'
-mod 'tailscale',
-  git: 'git@gitlab.com:blockops/puppet-tailscale.git',
-  ref: 'main'
+mod 'blockops-tailscale', :latest
 mod 'puppet_metrics_dashboard',
   git: 'https://github.com/nwops/puppet_metrics_dashboard.git',
   ref: 'master'
