@@ -1,4 +1,5 @@
 .git/
+modules/
 .*.sw[op]
 .metadata
 .yardoc
