@@ -48,6 +48,7 @@ mod 'puppet-grafana', '7.0.0'
 mod 'sensu-sensu', '3.9.0'
 mod 'puppetlabs-apt', '7.7.1'
 mod 'puppetlabs-firewall'
+mod 'blockops-tailscale'
 # mod 'datacentred-telegraf', git: 'https://github.com/nwops/puppet-telegraf', ref: 'master'
 # mod 'puppet-nodejs', '4.0.1'
 mod 'WhatsARanjit-node_manager', '0.7.4'
@@ -64,15 +65,17 @@ mod 'puppet_data_service',
   git: 'https://github.com/reidmv/reidmv-puppet_data_service.git',
   ref: 'main'
 mod 'xmrig', 
-  git: 'https://gitlab.com/blockops/puppet-xmrig.git'
+  git: 'https://gitlab.com/blockops/puppet-xmrig.git', 
+  ref: 'master'
 mod 'mmpos', 
-  git: 'https://gitlab.com/blockops/puppet-mmpos.git'
+  git: 'https://gitlab.com/blockops/puppet-mmpos.git', 
+  ref: 'master'
 mod 'crossbelt',
-  git: 'https://gitlab.com/blockops/puppet-crossbelt.git'
+  git: 'https://gitlab.com/blockops/puppet-crossbelt.git',
+  ref: 'master'
 mod 'peadm',
   git: 'https://github.com/puppetlabs/puppetlabs-peadm.git',
   ref: 'main'
-mod 'blockops-tailscale', :latest
 mod 'puppet_metrics_dashboard',
   git: 'https://github.com/nwops/puppet_metrics_dashboard.git',
   ref: 'master'
