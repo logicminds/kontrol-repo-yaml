@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Pdk basic 
+
+# Controls when the workflow will run
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  GITHUB_USER: ${{ secrets.PUPPET_REPO_USER }}
+  GITHUB_TOKEN: ${{ secrets.PUPPET_REPO_USER_TOKEN }}
+
+concurrency:
+  group: ${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  puppet:
+    name: PDK validation and testing 
+    uses: logicminds/gha-puppet/.github/workflows/pdk-basic.yml@pdk 
+
