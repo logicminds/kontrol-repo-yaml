@@ -4,6 +4,7 @@ forge 'https://forge.puppet.com'
 mod 'puppetlabs-comply', '2.3.0'
 mod 'puppet-hiera', '4.0.0'
 mod 'puppetlabs-pe_status_check', '1.1.0'
+mod 'puppet-letsencrypt', '8.0.2'
 # dependencies for comply
 mod 'puppet-archive', '6.0.2'
 mod 'puppetlabs-chocolatey', '6.0.1'
